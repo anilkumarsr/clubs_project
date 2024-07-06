@@ -7,6 +7,8 @@ import NotFound from "./view/NotFound";
 import DefaultLayout from "./components/DefaultLayout";
 import GuestLayout from "./components/GuestLayout";
 import Dashboard from "./view/Dashboard";
+import Home from "./Home";
+import About from "./About";
 
 const router = createBrowserRouter([
   {
@@ -38,6 +40,14 @@ const router = createBrowserRouter([
       },
      
       ]
+  },
+  {
+    path: '/home',
+    element: <Home/>
+  },
+  {
+    path: '/aboutus',
+    element: <About/>
   },
  
   {
